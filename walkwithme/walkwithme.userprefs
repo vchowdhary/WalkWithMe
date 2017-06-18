@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{F1EAF5C5-FEF3-4982-9EC7-283386B00F85}|Default">
+  <MonoDevelop.Ide.ItemProperties.walkwithme PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E480B64D-A4E9-40A0-B28D-60777E159C33" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="walkwithme/mapScreen.cs">
+    <Files>
+      <File FileName="walkwithme/Main.storyboard" />
+      <File FileName="walkwithme/mapScreen.cs" Line="9" Column="9" />
+      <File FileName="walkwithme/mapScreen.designer.cs" Line="31" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
