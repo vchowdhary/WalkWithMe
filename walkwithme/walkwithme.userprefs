@@ -1,13 +1,26 @@
 ﻿<Properties StartupConfiguration="{F1EAF5C5-FEF3-4982-9EC7-283386B00F85}|Default">
-  <MonoDevelop.Ide.ItemProperties.walkwithme PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E480B64D-A4E9-40A0-B28D-60777E159C33" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="walkwithme/mapScreen.cs">
+  <MonoDevelop.Ide.ItemProperties.walkwithme PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.66343725a4344796b24af3432408800c09909eb0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="walkwithme/newRouteScreen.cs">
     <Files>
       <File FileName="walkwithme/Main.storyboard" />
-      <File FileName="walkwithme/mapScreen.cs" Line="9" Column="9" />
-      <File FileName="walkwithme/mapScreen.designer.cs" Line="31" Column="22" />
+      <File FileName="walkwithme/panicScreen_.cs" Line="55" Column="3" />
+      <File FileName="walkwithme/newRouteScreen.cs" Line="14" Column="7" />
+      <File FileName="walkwithme/Info.plist" />
+      <File FileName="walkwithme/Main.cs" Line="5" Column="29" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="walkwithme" expanded="True">
+            <Node name="walkwithme" expanded="True">
+              <Node name="newRouteScreen.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

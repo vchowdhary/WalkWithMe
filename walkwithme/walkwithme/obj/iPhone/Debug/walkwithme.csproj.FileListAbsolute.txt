@@ -1,0 +1,9 @@
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/bin/iPhone/Debug/walkwithme.exe
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/bin/iPhone/Debug/walkwithme.pdb
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/actool/_PartialAppManifest.items
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/actool/_BundleResourceWithLogicalName.items
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/optimized/
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhone/Debug/walkwithme.csproj.CoreCompileInputs.cache
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhone/Debug/walkwithme.exe
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhone/Debug/walkwithme.pdb

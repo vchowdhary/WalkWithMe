@@ -16,17 +16,17 @@ namespace walkwithme
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton startNewRouteButton { get; set; }
+        UIKit.UIView map { get; set; }
 
-        [Action ("StartNewRouteButton_TouchUpInside:")]
+        [Action ("UIButton752_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void StartNewRouteButton_TouchUpInside (UIKit.UIButton sender);
+        partial void UIButton752_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
-            if (startNewRouteButton != null) {
-                startNewRouteButton.Dispose ();
-                startNewRouteButton = null;
+            if (map != null) {
+                map.Dispose ();
+                map = null;
             }
         }
     }

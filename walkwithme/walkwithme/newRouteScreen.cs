@@ -10,9 +10,23 @@ namespace walkwithme
         {
         }
 
-        partial void StartNewRouteButton_TouchUpInside(UIButton sender)
+        UIActionSheet actionSheet;
+        partial void UIButton752_TouchUpInside(UIButton sender)
         {
-            Console.WriteLine("User pressed the start new route button in order to start a new route. Bringing the user to tha panic page."); 
+			Console.WriteLine("User pressed the start new route button in order to start a new route. Bringing the user to tha panic page.");
+			actionSheet = new UIActionSheet("action sheet with other buttons");
+			actionSheet.AddButton("switch");
+			actionSheet.AddButton("cancel");
+			actionSheet.CancelButtonIndex = 1;
+			actionSheet.Clicked += delegate (object a, UIButtonEventArgs b)
+			{
+				Console.WriteLine("Button " + b.ButtonIndex + " clicked");
+                if (b.ButtonIndex == 0)
+				{
+					PerformSegue("moveToOther", this);
+				}
+			};
+			actionSheet.ShowInView(View);
         }
     }
 }

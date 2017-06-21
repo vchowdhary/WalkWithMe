@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="16">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
@@ -47,6 +47,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LoginButton_TouchUpInside:" destination="16" id="27" eventType="touchUpInside"/>
+                                    <segue id="865" destination="33" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="25" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -58,6 +59,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES"/>
                                 <connections>
                                     <action selector="RegisterButton_TouchUpInside:" destination="16" id="28" eventType="touchUpInside"/>
+                                    <segue id="919" destination="98" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="26" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -104,7 +106,7 @@
         </scene>
         <scene sceneID="32">
             <objects>
-                <viewController id="33" sceneMemberID="viewController" customClass="mapScreen">
+                <viewController id="33" sceneMemberID="viewController" customClass="newRouteScreen">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="30"/>
                         <viewControllerLayoutGuide type="bottom" id="31"/>
@@ -114,10 +116,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="94" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="38" y="118" width="300" height="353"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Screen - Welcome User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="93" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="32" y="47" width="311" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -147,13 +145,13 @@
                                 </state>
                                 <connections>
                                     <action selector="UIButton752_TouchUpInside:" destination="33" id="753" eventType="touchUpInside"/>
+                                    <segue id="825" destination="761" kind="show" identifier="moveToOther"/>
                                 </connections>
                             </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="93"/>
-                                <exclude reference="94"/>
                                 <exclude reference="748"/>
                                 <exclude reference="749"/>
                                 <exclude reference="752"/>
@@ -162,7 +160,6 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="93"/>
-                                <include reference="94"/>
                                 <include reference="748"/>
                                 <include reference="749"/>
                                 <include reference="752"/>
@@ -307,10 +304,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="827" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="137" y="465" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send a Text">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="UIButton827_TouchUpInside:" destination="761" id="828" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="765"/>
+                                <exclude reference="827"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="766"/>
@@ -321,6 +329,7 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="765"/>
+                                <include reference="827"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="766"/>

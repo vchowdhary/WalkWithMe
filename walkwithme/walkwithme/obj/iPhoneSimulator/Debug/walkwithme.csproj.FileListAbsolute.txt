@@ -7,13 +7,22 @@
 /Users/main/Projects/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.csproj.CoreCompileInputs.cache
 /Users/main/Projects/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.exe
 /Users/main/Projects/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.pdb
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\bin\iPhoneSimulator\Debug\walkwithme.exe
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\bin\iPhoneSimulator\Debug\walkwithme.pdb
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\bin\iPhoneSimulator\Debug\mscorlib.dll
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\bin\iPhoneSimulator\Debug\mscorlib.dll.mdb
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\obj\iPhoneSimulator\Debug\optimized\
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\obj\iPhoneSimulator\Debug\walkwithme.exe
-C:\Users\Girls Who Code\Desktop\WalkWithMe\walkwithme\walkwithme\obj\iPhoneSimulator\Debug\walkwithme.pdb
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/bin/iPhoneSimulator/Debug/walkwithme.exe
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/bin/iPhoneSimulator/Debug/walkwithme.pdb
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/bin/iPhoneSimulator/Debug/mscorlib.dll
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/bin/iPhoneSimulator/Debug/mscorlib.dll.mdb
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/actool/_PartialAppManifest.items
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/actool/_BundleResourceWithLogicalName.items
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/optimized/
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.exe
+C:/Users/Girls Who Code/Desktop/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.pdb
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/bin/iPhoneSimulator/Debug/walkwithme.exe
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/bin/iPhoneSimulator/Debug/walkwithme.pdb
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/ibtool/_BundleResourceWithLogicalName.items
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/_PartialAppManifest.items
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/actool/_BundleResourceWithLogicalName.items
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/device-builds/iphone8.1-10.3/optimized/
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.csproj.CoreCompileInputs.cache
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.exe
+/Users/main/Documents/WalkWithMe/walkwithme/walkwithme/obj/iPhoneSimulator/Debug/walkwithme.pdb
