@@ -47,7 +47,7 @@
                                 </state>
                                 <connections>
                                     <action selector="LoginButton_TouchUpInside:" destination="16" id="27" eventType="touchUpInside"/>
-                                    <segue id="865" destination="33" kind="show"/>
+                                    <segue id="865" destination="33" kind="show" identifier="moveToMap"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="25" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -59,7 +59,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES"/>
                                 <connections>
                                     <action selector="RegisterButton_TouchUpInside:" destination="16" id="28" eventType="touchUpInside"/>
-                                    <segue id="919" destination="98" kind="show"/>
+                                    <segue id="919" destination="98" kind="show" identifier="moveToReg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="26" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
@@ -102,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="-4"/>
+            <point key="canvasLocation" x="140" y="-66"/>
         </scene>
         <scene sceneID="32">
             <objects>
@@ -145,7 +145,17 @@
                                 </state>
                                 <connections>
                                     <action selector="UIButton752_TouchUpInside:" destination="33" id="753" eventType="touchUpInside"/>
-                                    <segue id="825" destination="761" kind="show" identifier="moveToOther"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="932" translatesAutoresizingMaskIntoConstraints="NO" hidden="YES">
+                                <rect key="frame" x="286" y="584" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="UIButton932_TouchUpInside:" destination="33" id="933" eventType="touchUpInside"/>
+                                    <segue id="1104" destination="761" kind="show" identifier="moveToOther"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -155,6 +165,7 @@
                                 <exclude reference="748"/>
                                 <exclude reference="749"/>
                                 <exclude reference="752"/>
+                                <exclude reference="932"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -163,6 +174,7 @@
                                 <include reference="748"/>
                                 <include reference="749"/>
                                 <include reference="752"/>
+                                <include reference="932"/>
                             </mask>
                         </variation>
                         <connections/>
@@ -173,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="632" y="-1"/>
+            <point key="canvasLocation" x="620" y="-101"/>
         </scene>
         <scene sceneID="97">
             <objects>
@@ -246,7 +258,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="164" destination="16" kind="show"/>
+                                    <segue id="164" destination="16" kind="show" identifier="moveToLogin"/>
                                     <action selector="BackToLoginButton_TouchUpInside:" destination="98" id="170" eventType="touchUpInside"/>
                                 </connections>
                             </button>
@@ -304,7 +316,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="827" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="827" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="137" y="465" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send a Text">

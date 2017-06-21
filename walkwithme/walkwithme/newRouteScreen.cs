@@ -21,12 +21,19 @@ namespace walkwithme
 			actionSheet.Clicked += delegate (object a, UIButtonEventArgs b)
 			{
 				Console.WriteLine("Button " + b.ButtonIndex + " clicked");
-                if (b.ButtonIndex == 0)
-				{
-					PerformSegue("moveToOther", this);
-				}
+                if (b.ButtonIndex!= actionSheet.CancelButtonIndex) {
+                    PerformSegue("moveToOther", this);
+                }
+                else Console.WriteLine("button not clicked");
 			};
 			actionSheet.ShowInView(View);
+        }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            base.PrepareForSegue(segue, sender);
+
+
         }
     }
 }

@@ -22,6 +22,10 @@ namespace walkwithme
         [GeneratedCode ("iOS Designer", "1.0")]
         partial void UIButton752_TouchUpInside (UIKit.UIButton sender);
 
+        [Action ("UIButton932_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void UIButton932_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (map != null) {
