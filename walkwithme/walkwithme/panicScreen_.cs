@@ -7,6 +7,7 @@ namespace walkwithme
 {
     public partial class panicScreen : UIViewController
     {
+        User user; 
         public panicScreen (IntPtr handle) : base (handle)
         {
         }
@@ -18,10 +19,15 @@ namespace walkwithme
 				Console.WriteLine("The app can send a message!");
 				MFMessageComposeViewController message = new MFMessageComposeViewController();
 				message.MessageComposeDelegate = new CustomMessageComposeDelegate();
-				message.Recipients = new string[] { "16099062676" };
+                message.Recipients = new string[] { user.getPhoneNumber() };
 				message.Body = "Hi! I'm sending a text to you.";
 				this.PresentModalViewController(message, true);
 			}
+        }
+
+        public void setUser(User user) 
+        {
+            this.user = user; 
         }
 
 		public class CustomMessageComposeDelegate : MFMessageComposeViewControllerDelegate

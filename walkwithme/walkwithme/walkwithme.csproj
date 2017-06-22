@@ -123,6 +123,7 @@
     <Compile Include="panicScreen_.designer.cs">
       <DependentUpon>panicScreen_.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
@@ -24,7 +24,15 @@ namespace walkwithme
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField password { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton registerButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField username { get; set; }
 
         [Action ("ForgotPasswordButton_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -50,9 +58,19 @@ namespace walkwithme
                 loginButton = null;
             }
 
+            if (password != null) {
+                password.Dispose ();
+                password = null;
+            }
+
             if (registerButton != null) {
                 registerButton.Dispose ();
                 registerButton = null;
+            }
+
+            if (username != null) {
+                username.Dispose ();
+                username = null;
             }
         }
     }

@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{F1EAF5C5-FEF3-4982-9EC7-283386B00F85}|Default">
-  <MonoDevelop.Ide.ItemProperties.walkwithme PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E480B64D-A4E9-40A0-B28D-60777E159C33" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="walkwithme/newRouteScreen.cs">
+  <MonoDevelop.Ide.ItemProperties.walkwithme PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.66343725a4344796b24af3432408800c09909eb0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="walkwithme/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/mtouch-cache/registrar.m">
     <Files>
       <File FileName="walkwithme/Main.storyboard" />
-      <File FileName="walkwithme/panicScreen_.cs" Line="55" Column="3" />
-      <File FileName="walkwithme/newRouteScreen.cs" Line="14" Column="7" />
+      <File FileName="walkwithme/loginScreen.cs" Line="40" Column="44" />
+      <File FileName="walkwithme/regScreen.cs" Line="23" Column="97" />
+      <File FileName="walkwithme/newRouteScreen.cs" Line="52" Column="45" />
+      <File FileName="walkwithme/panicScreen_.cs" Line="25" Column="5" />
       <File FileName="walkwithme/Info.plist" />
-      <File FileName="walkwithme/Main.cs" Line="5" Column="29" />
+      <File FileName="walkwithme/Main.cs" Line="12" Column="1" />
+      <File FileName="walkwithme/obj/iPhone/Debug/device-builds/iphone8.1-10.3.2/mtouch-cache/registrar.m" Line="1153" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -6,8 +6,22 @@ namespace walkwithme
 {
     public partial class newRouteScreen : UIViewController
     {
+        User user; 
         public newRouteScreen (IntPtr handle) : base (handle)
         {
+            
+        }
+
+        public void setUser(User user) 
+        {
+            this.user = user; 
+        }
+
+        public override void ViewDidLoad() 
+        {
+            base.ViewDidLoad();
+            Console.WriteLine("In the route screen."); 
+            Console.WriteLine(user.toString()); 
         }
 
         UIActionSheet actionSheet;
@@ -32,7 +46,11 @@ namespace walkwithme
         public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
         {
             base.PrepareForSegue(segue, sender);
-
+            var transferUser = segue.DestinationViewController as panicScreen;
+            if (transferUser != null) 
+            {
+                transferUser.setUser(user); 
+            }
 
         }
     }
