@@ -1,6 +1,10 @@
+using CoreLocation;
 using Foundation;
+using MapKit;
 using System;
 using UIKit;
+using CoreGraphics;
+using Google.Maps;
 
 namespace walkwithme
 {
@@ -17,11 +21,39 @@ namespace walkwithme
             this.user = user; 
         }
 
-        public override void ViewDidLoad() 
+
+        public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            Console.WriteLine("In the route screen."); 
-            Console.WriteLine(user.toString()); 
+
+            CLLocationManager lm = new CLLocationManager(); //changed the class name
+            lm.RequestWhenInUseAuthorization();
+            lm.StartUpdatingLocation();
+
+            var frame = View.Frame;
+            var rect = new CGRect(0, frame.Height / 6, frame.Width, 3 * frame.Height / 4);
+            var mapView = new MapView(rect);
+            UIMapView.AddSubview(mapView);
+
+
+            lm.LocationsUpdated += delegate (object sender, CLLocationsUpdatedEventArgs e) {
+                Console.WriteLine("Location updated!");
+                foreach (CLLocation l in e.Locations)
+                {
+                    Console.WriteLine(l.Coordinate.Latitude.ToString() + ", " + l.Coordinate.Longitude.ToString());
+                    CLLocationCoordinate2D coord = new CLLocationCoordinate2D(l.Coordinate.Latitude, l.Coordinate.Longitude);
+                    var marker = Marker.FromPosition(coord);
+                    marker.Title = string.Format("Marker 1");
+                    var camera = CameraPosition.FromCamera(latitude: l.Coordinate.Latitude,
+                                           longitude: l.Coordinate.Longitude,
+                                           zoom: 18);
+                    mapView = MapView.FromCamera(rect, camera);
+                    mapView.MyLocationEnabled = true;
+                    marker.Map = mapView;
+                    //View = mapView;
+                }
+                UIMapView.Add(mapView);
+            };
         }
 
         UIActionSheet actionSheet;

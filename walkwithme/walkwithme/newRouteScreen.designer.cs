@@ -1,4 +1,4 @@
-// WARNING
+﻿// WARNING
 //
 // This file has been generated automatically by Visual Studio from the outlets and
 // actions declared in your storyboard file.
@@ -16,7 +16,7 @@ namespace walkwithme
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView map { get; set; }
+        UIKit.UIView UIMapView { get; set; }
 
         [Action ("UIButton752_TouchUpInside:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -28,9 +28,9 @@ namespace walkwithme
 
         void ReleaseDesignerOutlets ()
         {
-            if (map != null) {
-                map.Dispose ();
-                map = null;
+            if (UIMapView != null) {
+                UIMapView.Dispose ();
+                UIMapView = null;
             }
         }
     }
