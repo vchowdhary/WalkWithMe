@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Google.Maps;
 using UIKit;
 
 namespace walkwithme
@@ -20,7 +21,7 @@ namespace walkwithme
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
-
+            MapServices.ProvideAPIKey("AIzaSyDowvyLnJXlAF1cVSW11_6w3DbwoECUiUY");
             return true;
         }
 
