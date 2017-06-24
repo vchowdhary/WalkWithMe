@@ -10,15 +10,15 @@ namespace walkwithme
 {
     public partial class newRouteScreen : UIViewController
     {
-        User user; 
-        public newRouteScreen (IntPtr handle) : base (handle)
+        User user;
+        public newRouteScreen(IntPtr handle) : base(handle)
         {
-            
+
         }
 
-        public void setUser(User user) 
+        public void setUser(User user)
         {
-            this.user = user; 
+            this.user = user;
         }
 
 
@@ -31,12 +31,17 @@ namespace walkwithme
             lm.StartUpdatingLocation();
 
             var frame = View.Frame;
-            var rect = new CGRect(0, frame.Height / 6, frame.Width, 3 * frame.Height / 4);
+            var rect = new CGRect(0, frame.Height / 8, frame.Width, 3 * frame.Height / 4);
             var mapView = new MapView(rect);
             UIMapView.AddSubview(mapView);
 
+            var g = new UITapGestureRecognizer(() => View.EndEditing(true));
+            g.CancelsTouchesInView = false; //for iOS5
 
-            lm.LocationsUpdated += delegate (object sender, CLLocationsUpdatedEventArgs e) {
+            View.AddGestureRecognizer(g);
+
+            lm.LocationsUpdated += delegate (object sender, CLLocationsUpdatedEventArgs e)
+            {
                 Console.WriteLine("Location updated!");
                 foreach (CLLocation l in e.Locations)
                 {
@@ -50,40 +55,69 @@ namespace walkwithme
                     mapView = MapView.FromCamera(rect, camera);
                     mapView.MyLocationEnabled = true;
                     marker.Map = mapView;
-                    //View = mapView;
+                    UIMapView.Add(mapView);
                 }
-                UIMapView.Add(mapView);
+
             };
         }
 
         UIActionSheet actionSheet;
         partial void UIButton752_TouchUpInside(UIButton sender)
         {
-			Console.WriteLine("User pressed the start new route button in order to start a new route. Bringing the user to tha panic page.");
-			actionSheet = new UIActionSheet("action sheet with other buttons");
-			actionSheet.AddButton("switch");
-			actionSheet.AddButton("cancel");
-			actionSheet.CancelButtonIndex = 1;
-			actionSheet.Clicked += delegate (object a, UIButtonEventArgs b)
-			{
-				Console.WriteLine("Button " + b.ButtonIndex + " clicked");
-                if (b.ButtonIndex!= actionSheet.CancelButtonIndex) {
+            Console.WriteLine("User pressed the start new route button in order to start a new route. Bringing the user to tha panic page.");
+            actionSheet = new UIActionSheet("action sheet with other buttons");
+            actionSheet.AddButton("switch");
+            actionSheet.AddButton("cancel");
+            actionSheet.CancelButtonIndex = 1;
+            actionSheet.Clicked += delegate (object a, UIButtonEventArgs b)
+            {
+                Console.WriteLine("Button " + b.ButtonIndex + " clicked");
+                if (b.ButtonIndex != actionSheet.CancelButtonIndex)
+                {
+                    openRoute(destination.Text);
                     PerformSegue("moveToOther", this);
                 }
                 else Console.WriteLine("button not clicked");
-			};
-			actionSheet.ShowInView(View);
+            };
+            actionSheet.ShowInView(View);
         }
 
         public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
         {
             base.PrepareForSegue(segue, sender);
             var transferUser = segue.DestinationViewController as panicScreen;
-            if (transferUser != null) 
+            if (transferUser != null)
             {
-                transferUser.setUser(user); 
+                transferUser.setUser(user);
             }
 
         }
+
+        private void openRoute(String destination)
+        {
+            CLGeocoder geocoder = new CLGeocoder();
+            geocoder.GeocodeAddress(destination, HandleCLGeocodeCompletionHandler);
+        }
+
+        private void HandleCLGeocodeCompletionHandler(CLPlacemark[] placemarks, NSError error)
+        {
+            try
+            {
+                CLLocationCoordinate2D coordinate = placemarks[0].Location.Coordinate;
+                Console.WriteLine(coordinate);
+                NSDictionary addresses = null;
+                MKPlacemark placemark = new MKPlacemark(coordinate, addresses);
+                MKMapItem router = new MKMapItem(placemark);
+
+                MKLaunchOptions options = new MKLaunchOptions();
+                router.OpenInMaps(options);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error - location could not be found." + ex.StackTrace);
+            }
+
+        }
+
     }
 }
