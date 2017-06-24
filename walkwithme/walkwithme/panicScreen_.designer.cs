@@ -11,14 +11,14 @@ using UIKit;
 
 namespace walkwithme
 {
-    [Register ("panicScreen")]
+    [Register("panicScreen")]
     partial class panicScreen
     {
-        [Action ("UIButton827_TouchUpInside:")]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        partial void UIButton827_TouchUpInside (UIKit.UIButton sender);
+        [Action("UIButton827_TouchUpInside:")]
+        [GeneratedCode("iOS Designer", "1.0")]
+        partial void UIButton827_TouchUpInside(UIKit.UIButton sender);
 
-        void ReleaseDesignerOutlets ()
+        void ReleaseDesignerOutlets()
         {
         }
     }

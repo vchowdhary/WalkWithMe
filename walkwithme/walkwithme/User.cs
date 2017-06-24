@@ -6,76 +6,76 @@ namespace walkwithme
         private String username;
         private String password;
         private String emailAddress;
-        private String phoneNumber; 
+        private String phoneNumber;
 
-        public User() 
+        public User()
         {
             username = "";
             password = "";
             emailAddress = "";
-            phoneNumber = ""; 
+            phoneNumber = "";
         }
 
-        public User(String username, String password) 
+        public User(String username, String password)
         {
             this.username = username;
-            this.password = password; 
+            this.password = password;
         }
 
-        public User(String username, String password, String emailAddress, String phoneNumber) 
+        public User(String username, String password, String emailAddress, String phoneNumber)
         {
             this.username = username;
             this.password = password;
             this.emailAddress = emailAddress;
-            this.phoneNumber = phoneNumber; 
+            this.phoneNumber = phoneNumber;
         }
 
-        public String getUsername() 
+        public String getUsername()
         {
-            return username; 
+            return username;
         }
 
-        public void setUsername(String username) 
+        public void setUsername(String username)
         {
-            this.username = username; 
+            this.username = username;
         }
 
-        public String getEmailAddress() 
+        public String getEmailAddress()
         {
-            return emailAddress; 
+            return emailAddress;
         }
 
         public void setEmailAddress(String emailAddress)
         {
-            this.emailAddress = emailAddress; 
+            this.emailAddress = emailAddress;
         }
 
-        public String getPassword() 
+        public String getPassword()
         {
             return password;
         }
 
         public void setPassword(String password)
         {
-            this.password = password; 
+            this.password = password;
         }
 
-        public String getPhoneNumber() 
+        public String getPhoneNumber()
         {
-            return phoneNumber; 
+            return phoneNumber;
         }
 
-        public void setPhoneNumber(String phoneNumber) 
+        public void setPhoneNumber(String phoneNumber)
         {
-            this.phoneNumber = phoneNumber; 
+            this.phoneNumber = phoneNumber;
         }
 
-        public String toString() 
+        public String toString()
         {
             return "Username: " + username + "\n"
                 + "Password: " + password + "\n"
                 + "Email Address: " + emailAddress + "\n"
-                + "Phone Number: " + phoneNumber; 
+                + "Phone Number: " + phoneNumber;
         }
     }
 }
